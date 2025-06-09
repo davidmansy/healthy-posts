@@ -1,3 +1,4 @@
+import { H1, H2 } from '@/components/typography';
 import { useParams, Link } from 'react-router';
 
 type AuthorParams = 'authorId';
@@ -7,14 +8,14 @@ export function Author() {
   const { authorId } = useParams<AuthorParamsMap>();
 
   return (
-    <div>
-      <h1>Author details</h1>
+    <div className="flex flex-1 flex-col items-center">
+      <H1>Author details</H1>
       <section>
         <p>Email (id): {authorId}</p>
         <p>Name</p>
       </section>
       <section>
-        <h2>List of author's posts</h2>
+        <H2>List of author's posts</H2>
         <ul>
           <li>
             <Link to="/posts/1">Post 1</Link>

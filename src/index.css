@@ -118,3 +118,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+  /* Sure children can use dvh for the height, this is just a safety measure */
+  html,
+  body, #root {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Helvetica Neue', var(--font-sans); /* --font-sans is a Tailwind default */
+  }

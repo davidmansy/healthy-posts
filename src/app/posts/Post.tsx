@@ -1,3 +1,4 @@
+import { H1, H2 } from '@/components/typography';
 import { useParams, Link } from 'react-router';
 
 type PostParams = 'postId';
@@ -7,8 +8,8 @@ export function Post() {
   const { postId } = useParams<PostParamsMap>();
 
   return (
-    <div>
-      <h1>Post details</h1>
+    <div className="flex flex-1 flex-col">
+      <H1>Post details</H1>
       <section>
         <p>id: {postId}</p>
         <p>
@@ -18,7 +19,7 @@ export function Post() {
         <p>Content</p>
       </section>
       <section>
-        <h2>List of comments</h2>
+        <H2>List of comments</H2>
         <ul>
           <li>
             <p>Comment 1</p>
