@@ -128,3 +128,12 @@
   body {
     font-family: 'Helvetica Neue', var(--font-sans); /* --font-sans is a Tailwind default */
   }
+
+  /* line-clamp with variable number */
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--lines);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  

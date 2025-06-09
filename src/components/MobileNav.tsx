@@ -27,7 +27,7 @@ export const MobileNav = () => {
             <Menu />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="mt-[65px] px-0">
+        <SheetContent side="left" className="mt-[65px] px-0 w-full">
           <SheetHeader>
             <SheetTitle className="sr-only focus:not-sr-only leading-none">Menu</SheetTitle>
             <SheetDescription className="sr-only focus:not-sr-only">Main navigation menu</SheetDescription>
